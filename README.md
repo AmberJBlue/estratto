@@ -1,18 +1,17 @@
-# Estratto - An Audio Feature Extraction Library
+# estratto - An Audio Feature Extraction Library
 
 [![Build Status](https://travis-ci.org/your-username/audio-feature-extraction.svg?branch=main)](https://travis-ci.org/your-username/audio-feature-extraction)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Estratto is a Rust library provides various audio feature extraction techniques for processing and analyzing audio signals. It is designed to be modular, easy to use, and extensible for different audio analysis tasks.
+Estratto is a powerful and user-friendly Rust library designed for extracting rich audio features from digital audio signals. Whether you're analyzing music, speech, or any other type of audio data, Estratto provides an array of feature extraction techniques that help you uncover valuable insights and patterns.
 
 ## Features
 
 - MFCC (Mel-Frequency Cepstral Coefficients) feature extraction
 - Pitch detection algorithms
-- (Add more features here)
+- (Add more features here... coming soon)
 
 ## Getting Started
-
 To use this library in your Rust project, add the following to your `Cargo.toml`:
 
 ```toml
