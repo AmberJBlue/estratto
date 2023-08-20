@@ -1,11 +1,20 @@
 [package]
 name = "estratto"
 version = "0.1.0"
-authors = ["Amber J Blue <amber.blue.j@gmail.com>"]
 edition = "2021"
 
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+wai-bindgen-rust = "0.2.3"
+
+[package.metadate.wapm]
+namespace = "cttm"
+abi = "none"
+bindings = {wai-version = "0.1.0", exports = "estratto.wai"}
+
+
 [dependencies]
-ndarray = "0.15.4"
-ndarray-rand = "0.14.0"
-hound = "3.4.0"
-rustfft = "6.0.1"
+wai-bindgen-rust = "0.2.3"
