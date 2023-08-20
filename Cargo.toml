@@ -1,0 +1,11 @@
+[package]
+name = "estratto"
+version = "0.1.0"
+authors = ["Amber J Blue <amber.blue.j@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15.4"
+ndarray-rand = "0.14.0"
+hound = "3.4.0"
+rustfft = "6.0.1"
