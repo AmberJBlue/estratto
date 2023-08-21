@@ -1,20 +1,17 @@
 [package]
 name = "estratto"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
-
+authors = ["Amber Blue <amber.blue.j@hi@amber.blue>"]
+description = "estratto is a powerful and user-friendly Rust library designed for extracting rich audio features from digital audio signals."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[lib]
-crate-type = ["cdylib", "rlib"]
-
-wai-bindgen-rust = "0.2.3"
-
-[package.metadate.wapm]
-namespace = "cttm"
-abi = "none"
-bindings = {wai-version = "0.1.0", exports = "estratto.wai"}
-
-
 [dependencies]
-wai-bindgen-rust = "0.2.3"
+rustfft = "6.0.1"
+
+[dev-dependencies]
+approx = "0.5.1"
+serde = "1.0.7"
+serde_derive = "1.0.7"
+serde_json = "1.0"
+rand = "0.8.4"

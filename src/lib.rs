@@ -1,9 +1,15 @@
-wai_bindgen_rust::export!("estratto.wai");
+#[cfg(test)]
+#[macro_use]
+extern crate serde_derive;
+#[cfg(test)]
+#[macro_use]
+extern crate approx;
 
-pub struct Estratto;
+mod features;
+mod utils;
 
-impl estratto::Estratto for Estratto {
-    fn hello() -> String {
-        return "Hello, estratto!".to_owned();
-    }
+pub type Hz = utils::Hz;
+
+pub fn get_zcr(signal: &Vec<f64>) -> f64 {
+    features::zcr::compute(signal)
 }

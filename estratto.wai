@@ -1,2 +1,0 @@
-// just testing the library creation
-hello: func() -> string
