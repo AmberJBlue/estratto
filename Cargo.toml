@@ -1,11 +1,17 @@
 [package]
 name = "estratto"
-version = "0.1.0"
-authors = ["Amber J Blue <amber.blue.j@gmail.com>"]
+version = "0.0.1"
 edition = "2021"
+authors = ["Amber Blue <amber.blue.j@hi@amber.blue>"]
+description = "estratto is a powerful and user-friendly Rust library designed for extracting rich audio features from digital audio signals."
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ndarray = "0.15.4"
-ndarray-rand = "0.14.0"
-hound = "3.4.0"
 rustfft = "6.0.1"
+
+[dev-dependencies]
+approx = "0.5.1"
+serde = "1.0.7"
+serde_derive = "1.0.7"
+serde_json = "1.0"
+rand = "0.8.4"
