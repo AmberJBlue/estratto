@@ -76,4 +76,17 @@ pub mod data {
             .map(|p| load_dataset(p))
             .collect()
     }
+
+    pub fn approx_compare_vec(vec1: &Vec<f64>, vec2: &Vec<f64>, precision: f64) -> () {
+        #[allow(unused_variables)]
+        let zipped: Vec<_> = vec1
+            .iter()
+            .zip(vec2.iter())
+            .inspect(|x| {
+                assert_relative_eq!(x.0, x.1, max_relative = precision, epsilon = f64::EPSILON)
+            })
+            .collect();
+
+        ()
+    }
 }
