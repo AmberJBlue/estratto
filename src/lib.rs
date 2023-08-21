@@ -21,3 +21,7 @@ pub fn get_rms(signal: &[f64]) -> f64 {
 pub fn get_amplitude_spectrum(signal: &[f64]) -> Vec<f64> {
     features::amplitude_spectrum::compute(signal)
 }
+
+pub fn get_power_spectrum(signal: &Vec<f64>) -> Vec<f64> {
+    features::power_spectrum::compute(signal)
+}
