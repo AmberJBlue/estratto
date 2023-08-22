@@ -2,7 +2,7 @@
 name = "estratto"
 version = "0.0.1"
 edition = "2021"
-authors = ["Amber Blue <amber.blue.j@hi@amber.blue>"]
+authors = ["Amber Blue <hi@amber.blue>"]
 description = "estratto is a powerful and user-friendly Rust library designed for extracting rich audio features from digital audio signals."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

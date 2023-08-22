@@ -1,10 +1,12 @@
 use crate::features::spectral::amplitude_spectrum;
-use crate::utils;
 
 pub fn compute(signal: &[f64]) -> f64 {
     let amplitude_spectrum: Vec<f64> = amplitude_spectrum::compute(signal);
 
-    utils::mu(1, &amplitude_spectrum)
+    let partial = amplitude_spectrum.iter().fold((0.0, 0.0), |acc, &x| (acc.0 + x.ln(), acc.1 + x));
+
+    ((partial.0 / (amplitude_spectrum.len() as f64)).exp() * (amplitude_spectrum.len() as f64)) /
+        partial.1
 }
 
 #[cfg(test)]
@@ -13,21 +15,21 @@ mod tests {
     use crate::utils::test;
     use std::f64;
 
-    const FLOAT_PRECISION: f64 = 0.000_001_000;
+    const FLOAT_PRECISION: f64 = 0.001_000_000;
 
     fn test_against(dataset: &test::data::TestDataSet) -> () {
-        let sc = compute(&dataset.signal);
+        let sf = compute(&dataset.signal);
 
         assert_relative_eq!(
-            sc,
-            dataset.features.spectralCentroid,
+            sf,
+            dataset.features.spectralFlatness,
             epsilon = f64::EPSILON,
             max_relative = FLOAT_PRECISION
         );
     }
 
     #[test]
-    fn test_spectral_centroid() {
+    fn test_spectral_flatness() {
         let datasets = test::data::get_all();
 
         for dataset in datasets.iter() {
