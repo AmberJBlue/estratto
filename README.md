@@ -2,7 +2,7 @@
 
 ![estratto Logo](logo-banner.png)
 
-[![Build Status](https://travis-ci.org/your-username/audio-feature-extraction.svg?branch=main)](https://travis-ci.org/your-username/audio-feature-extraction)
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](link-to-your-documentation-if-any)
 
