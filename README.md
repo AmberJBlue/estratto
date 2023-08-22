@@ -4,6 +4,7 @@
 
 [![build](https://github.com/AmberJBlue/estratto/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/AmberJBlue/estratto/actions/workflows/build.yml)
 [![tests](https://github.com/AmberJBlue/estratto/actions/workflows/test.yml/badge.svg)](https://github.com/AmberJBlue/estratto/actions/workflows/test.yml)
+[![linter](https://github.com/AmberJBlue/estratto/actions/workflows/lint.yml/badge.svg)](https://github.com/AmberJBlue/estratto/actions/workflows/lint.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](link-to-your-documentation-if-any)
 
