@@ -50,9 +50,3 @@ cargo test
 ## 📜 License
 
 estratto is open-sourced under the [MIT License](https://opensource.org/licenses/MIT).
-
-### Running Tests
-
-```sh
-cargo test
-```
