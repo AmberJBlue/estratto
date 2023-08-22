@@ -15,20 +15,14 @@
 estratto equips developers with a comprehensive suite of audio feature extraction tools:
 
 ### Spectral
-
-- **Amplitude Spectrum**: Extract the magnitude spectrum of an audio signal, showcasing its frequency components and their respective intensities.
-
-- **Power Spectrum**: Dive deeper into the frequency domain by squaring the amplitude spectrum.
-
-- **Spectral Centroid**: An intuitive measure for understanding the "brightness" or tonal characteristic of a sound.
-
-- **Spectral Rolloff**: Determine the threshold frequency, below which a set percentage of the spectrum's energy is contained.
-
-- **RMS (Root Mean Square)**: Understand the perceived loudness or intensity of your sound using this quadratic mean of the waveform.
-
-- **Zero Crossing Rate**: Differentiate rhythmic sounds from tonal ones with this feature.
-
-- **...and more**: This is still a work in progress stay tuned for more features!
+- Amplitude Spectrum
+- Power Spectrum
+- RMS (Root Mean Square)
+- Spectral Centroid
+- Spectral Flatness
+- Spectral Rolloff
+- Zero Crossing Rate
+- **...and more** - This is still a work in progress stay tuned for more features!
 
 ## 🚀 Getting Started
 
