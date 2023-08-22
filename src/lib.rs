@@ -69,6 +69,24 @@ pub fn get_spectral_centroid(signal: &[f64]) -> f64 {
     features::spectral::spectral_centroid::compute(signal)
 }
 
+/// Spectral Flatness
+///
+/// Measures the uniformity of a spectrum by comparing the geometric mean to the arithmetic mean.
+/// A spectrum that is more noise-like (as opposed to being tonal) will have a higher spectral flatness.
+///
+/// # Parameters
+///
+/// * `signal` - A slice of the signal samples.
+///
+/// # Returns
+///
+/// A floating point value representing the spectral flatness of the signal, where a higher value indicates
+/// a more uniform, noise-like spectrum, and a lower value indicates a more tonal spectrum.
+///
+pub fn get_spectral_flatness(signal: &[f64]) -> f64 {
+    features::spectral::spectral_flatness::compute(signal)
+}
+
 /// Spectral Rolloff
 ///
 /// The threshold frequency where a specified percentage of the spectrum's energy

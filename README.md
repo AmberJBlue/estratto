@@ -14,6 +14,8 @@
 
 estratto equips developers with a comprehensive suite of audio feature extraction tools:
 
+### Spectral
+
 - **Amplitude Spectrum**: Extract the magnitude spectrum of an audio signal, showcasing its frequency components and their respective intensities.
 
 - **Power Spectrum**: Dive deeper into the frequency domain by squaring the amplitude spectrum.
@@ -28,7 +30,9 @@ estratto equips developers with a comprehensive suite of audio feature extractio
 
 - **...and more**: This is still a work in progress stay tuned for more features!
 
-
+### Rhythm 
+### Inversion
+### Manipulation
 ## 🚀 Getting Started
 
 ### Installation
