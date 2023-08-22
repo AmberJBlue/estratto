@@ -1,4 +1,4 @@
-# estratto - An Audio Feature Extraction Library
+# estratto 〜 An Audio Feature Extraction Library
 
 ![estratto Logo](logo-banner.png)
 
