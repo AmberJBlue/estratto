@@ -30,9 +30,6 @@ estratto equips developers with a comprehensive suite of audio feature extractio
 
 - **...and more**: This is still a work in progress stay tuned for more features!
 
-### Rhythm 
-### Inversion
-### Manipulation
 ## 🚀 Getting Started
 
 ### Installation
