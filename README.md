@@ -49,10 +49,6 @@ cargo test
 
 estratto is open-sourced under the [MIT License](https://opensource.org/licenses/MIT).
 
----
-
-Remember to replace placeholders (like `link-to-your-logo-if-any`) with the actual links or content. This template assumes some level of community interaction, so consider what sections make sense for your project as it stands and as you envision it growing in the future.
-
 ### Running Tests
 
 ```sh
