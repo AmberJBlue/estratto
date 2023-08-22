@@ -13,17 +13,17 @@
 
 estratto equips developers with a comprehensive suite of audio feature extraction tools:
 
-- **Amplitude Spectrum**: Extract the magnitude spectrum of an audio signal, showcasing its frequency components and their respective intensities. Use `get_amplitude_spectrum` for a vector representation of the amplitude.
+- **Amplitude Spectrum**: Extract the magnitude spectrum of an audio signal, showcasing its frequency components and their respective intensities.
 
-- **Power Spectrum**: Dive deeper into the frequency domain by squaring the amplitude spectrum. Fetch it using `get_power_spectrum`.
+- **Power Spectrum**: Dive deeper into the frequency domain by squaring the amplitude spectrum.
 
-- **Spectral Centroid**: An intuitive measure for understanding the "brightness" or tonal characteristic of a sound. Fetch it using `get_spectral_centroid`.
+- **Spectral Centroid**: An intuitive measure for understanding the "brightness" or tonal characteristic of a sound.
 
-- **Spectral Rolloff**: Determine the threshold frequency, below which a set percentage of the spectrum's energy is contained. Extract it with `get_spectral_rolloff`.
+- **Spectral Rolloff**: Determine the threshold frequency, below which a set percentage of the spectrum's energy is contained.
 
-- **RMS (Root Mean Square)**: Understand the perceived loudness or intensity of your sound using this quadratic mean of the waveform. Use `get_rms` to get insights.
+- **RMS (Root Mean Square)**: Understand the perceived loudness or intensity of your sound using this quadratic mean of the waveform.
 
-- **Zero Crossing Rate**: Differentiate rhythmic sounds from tonal ones with this feature. Use `get_zcr` for the exact rate.
+- **Zero Crossing Rate**: Differentiate rhythmic sounds from tonal ones with this feature.
 
 - **...and more**: This is still a work in progress stay tuned for more features!
 
