@@ -26,7 +26,9 @@ pub type Hz = utils::Hz;
 ///
 /// * `signal` - A slice of the signal samples.
 ///
-/// # Returns a vector containing the amplitude spectrum.
+/// # Returns
+///
+/// A vector containing the amplitude spectrum.
 ///
 pub fn get_amplitude_spectrum(signal: &[f64]) -> Vec<f64> {
     features::spectral::amplitude_spectrum::compute(signal)
@@ -40,7 +42,9 @@ pub fn get_amplitude_spectrum(signal: &[f64]) -> Vec<f64> {
 ///
 /// * `signal` - A reference to a vector of the signal samples.
 ///
-/// # Returns a vector containing the power spectrum.
+/// # Returns
+///
+/// A vector containing the power spectrum.
 ///
 pub fn get_power_spectrum(signal: &Vec<f64>) -> Vec<f64> {
     features::spectral::power_spectrum::compute(signal)
@@ -57,7 +61,9 @@ pub fn get_power_spectrum(signal: &Vec<f64>) -> Vec<f64> {
 ///
 /// * `signal` - A reference to a vector of the signal samples.
 ///
-/// # Returns a floating point value representing the spectral centroid.
+/// # Returns
+///
+/// A floating point value representing the spectral centroid.
 ///
 pub fn get_spectral_centroid(signal: &Vec<f64>) -> f64 {
     features::spectral::spectral_centroid::compute(signal)
@@ -73,7 +79,9 @@ pub fn get_spectral_centroid(signal: &Vec<f64>) -> f64 {
 /// * `sample_rate` - The sample rate of the signal in Hz.
 /// * `rolloff_point` - An optional threshold to compute the rolloff, defaults to 0.99 if not provided.
 ///
-/// # Returns a floating point value representing the spectral rolloff.
+/// # Returns
+///
+/// A floating point value representing the spectral rolloff.
 ///
 pub fn get_spectral_rolloff(
     signal: &Vec<f64>,
@@ -93,7 +101,9 @@ pub fn get_spectral_rolloff(
 /// # Parameters
 ///
 /// * `signal` - A reference to a vector of the signal samples.
-/// # Returns a floating point value representing the RMS of the signal.
+/// # Returns
+///
+/// A floating point value representing the RMS of the signal.
 ///
 pub fn get_rms(signal: &[f64]) -> f64 {
     features::spectral::rms::compute(signal)
@@ -111,7 +121,9 @@ pub fn get_rms(signal: &[f64]) -> f64 {
 ///
 /// * `signal` - A slice of the signal samples.
 ///
-/// # Returns a floating point value representing the ZCR of the signal.
+/// # Returns
+///
+/// A floating point value representing the ZCR of the signal.
 ///
 pub fn get_zcr(signal: &[f64]) -> f64 {
     features::spectral::zcr::compute(signal)
