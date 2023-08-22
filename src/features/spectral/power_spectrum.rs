@@ -1,4 +1,4 @@
-use crate::features::amplitude_spectrum;
+use crate::features::spectral::amplitude_spectrum;
 
 pub fn compute(signal: &Vec<f64>) -> Vec<f64> {
     let amplitude_spectrum: Vec<f64> = amplitude_spectrum::compute(signal);
