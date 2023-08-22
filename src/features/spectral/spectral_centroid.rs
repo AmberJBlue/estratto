@@ -2,9 +2,9 @@ use crate::features::spectral::amplitude_spectrum;
 use crate::utils;
 
 pub fn compute(signal: &[f64]) -> f64 {
-    let amp_spec: Vec<f64> = amplitude_spectrum::compute(signal);
+    let amplitude_spectrum: Vec<f64> = amplitude_spectrum::compute(signal);
 
-    utils::mu(1, &amp_spec)
+    utils::mu(1, &amplitude_spectrum)
 }
 
 #[cfg(test)]
