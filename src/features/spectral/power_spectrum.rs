@@ -1,15 +1,14 @@
 use crate::features::spectral::amplitude_spectrum;
 
-pub fn compute(signal: &Vec<f64>) -> Vec<f64> {
+pub fn compute(signal: &[f64]) -> Vec<f64> {
     let amplitude_spectrum: Vec<f64> = amplitude_spectrum::compute(signal);
 
     let power_spectrum: Vec<f64> = amplitude_spectrum
         .iter()
         .map(|bin| bin.powi(2))
-        .into_iter()
         .collect();
 
-    return power_spectrum;
+    power_spectrum
 }
 
 #[cfg(test)]

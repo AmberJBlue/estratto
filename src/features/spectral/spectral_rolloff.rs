@@ -1,6 +1,6 @@
 use crate::features::spectral::amplitude_spectrum;
 
-pub fn compute(signal: &Vec<f64>, sample_rate: f64, rolloff_point: Option<f64>) -> f64 {
+pub fn compute(signal: &[f64], sample_rate: f64, rolloff_point: Option<f64>) -> f64 {
     let amplitude_spectrum: Vec<f64> = amplitude_spectrum::compute(signal);
 
     let nyquist_bin = sample_rate / (2.0 * ((amplitude_spectrum.len() as f64) - 1.0));

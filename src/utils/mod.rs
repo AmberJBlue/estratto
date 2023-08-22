@@ -1,7 +1,7 @@
 pub mod test;
 pub type Hz = f64;
 
-pub fn mu(exp: i32, vector: &Vec<f64>) -> f64 {
+pub fn mu(exp: i32, vector: &[f64]) -> f64 {
     let fraction = vector
         .iter()
         .enumerate()

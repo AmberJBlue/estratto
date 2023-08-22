@@ -1,7 +1,7 @@
 use crate::features::spectral::amplitude_spectrum;
 use crate::utils;
 
-pub fn compute(signal: &Vec<f64>) -> f64 {
+pub fn compute(signal: &[f64]) -> f64 {
     let amp_spec: Vec<f64> = amplitude_spectrum::compute(signal);
 
     utils::mu(1, &amp_spec)

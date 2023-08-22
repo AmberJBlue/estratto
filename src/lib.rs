@@ -46,7 +46,7 @@ pub fn get_amplitude_spectrum(signal: &[f64]) -> Vec<f64> {
 ///
 /// A vector containing the power spectrum.
 ///
-pub fn get_power_spectrum(signal: &Vec<f64>) -> Vec<f64> {
+pub fn get_power_spectrum(signal: &[f64]) -> Vec<f64> {
     features::spectral::power_spectrum::compute(signal)
 }
 
@@ -65,7 +65,7 @@ pub fn get_power_spectrum(signal: &Vec<f64>) -> Vec<f64> {
 ///
 /// A floating point value representing the spectral centroid.
 ///
-pub fn get_spectral_centroid(signal: &Vec<f64>) -> f64 {
+pub fn get_spectral_centroid(signal: &[f64]) -> f64 {
     features::spectral::spectral_centroid::compute(signal)
 }
 
@@ -83,11 +83,7 @@ pub fn get_spectral_centroid(signal: &Vec<f64>) -> f64 {
 ///
 /// A floating point value representing the spectral rolloff.
 ///
-pub fn get_spectral_rolloff(
-    signal: &Vec<f64>,
-    sample_rate: f64,
-    rolloff_point: Option<f64>
-) -> f64 {
+pub fn get_spectral_rolloff(signal: &[f64], sample_rate: f64, rolloff_point: Option<f64>) -> f64 {
     features::spectral::spectral_rolloff::compute(signal, sample_rate, rolloff_point)
 }
 
