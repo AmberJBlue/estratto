@@ -32,7 +32,7 @@ Simply add estratto to your Rust project's `Cargo.toml`:
 
 ```toml
 [dependencies]
-estratto = "0.1.0"
+estratto = "0.0.1"
 ```
 
 ### Run Tests
