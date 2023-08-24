@@ -6,7 +6,7 @@
 [![all tests](https://github.com/AmberJBlue/estratto/actions/workflows/test.yml/badge.svg)](https://github.com/AmberJBlue/estratto/actions/workflows/test.yml)
 [![linter](https://github.com/AmberJBlue/estratto/actions/workflows/lint.yml/badge.svg)](https://github.com/AmberJBlue/estratto/actions/workflows/lint.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](link-to-your-documentation-if-any)
+[![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://docs.rs/estratto/0.0.1/estratto/)
 
 **estratto** is a powerful and user-friendly Rust library designed for extracting rich audio features from digital audio signals. Whether you're analyzing music, speech, or any other type of audio data, estratto provides an array of feature extraction techniques that help you uncover valuable insights and patterns.
 
