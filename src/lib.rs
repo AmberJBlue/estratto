@@ -24,7 +24,7 @@ pub type Hz = utils::Hz;
 ///
 /// # Parameters
 ///
-/// * `signal` - A slice of the signal samples.
+/// * `signal` - A reference to a slice of the signal samples.
 ///
 /// # Returns
 ///
@@ -40,7 +40,7 @@ pub fn get_amplitude_spectrum(signal: &[f64]) -> Vec<f64> {
 ///
 /// # Parameters
 ///
-/// * `signal` - A reference to a vector of the signal samples.
+/// * `signal` -A reference to a slice of the signal samples.
 ///
 /// # Returns
 ///
@@ -59,7 +59,7 @@ pub fn get_power_spectrum(signal: &[f64]) -> Vec<f64> {
 ///
 /// # Parameters
 ///
-/// * `signal` - A reference to a vector of the signal samples.
+/// * `signal` - A reference to a slice of the signal samples.
 ///
 /// # Returns
 ///
@@ -69,6 +69,30 @@ pub fn get_spectral_centroid(signal: &[f64]) -> f64 {
     features::spectral::spectral_centroid::compute(signal)
 }
 
+/// Spectral Contrast
+///
+/// A measure of the difference between peak and valley values in various sub-bands
+/// of the frequency spectrum. High contrast values generally correspond to clear,
+/// narrow-band signals, while low contrast values are indicative of broad-band noise.
+///
+/// This algorithm divides the amplitude spectrum into multiple sub-bands and calculates
+/// the difference between the maximum (peak) and minimum (valley) values within each
+/// sub-band. The result is a vector of contrast values, one for each defined sub-band.
+///
+/// # Parameters
+///
+/// * `signal` - A reference to a slice of the signal samples.
+///
+///
+/// # Returns
+///
+/// A vector of floating-point numbers, each representing the contrast value for
+/// a specific sub-band of the input amplitude spectrum.
+///
+pub fn get_spectral_contrast(signal: &[f64]) -> Vec<f64> {
+    features::spectral::spectral_contrast::compute(signal)
+}
+
 /// Spectral Flatness
 ///
 /// Measures the uniformity of a spectrum by comparing the geometric mean to the arithmetic mean.
@@ -76,7 +100,7 @@ pub fn get_spectral_centroid(signal: &[f64]) -> f64 {
 ///
 /// # Parameters
 ///
-/// * `signal` - A slice of the signal samples.
+/// * `signal` - A reference to a slice of the signal samples.
 ///
 /// # Returns
 ///
@@ -93,7 +117,7 @@ pub fn get_spectral_flatness(signal: &[f64]) -> f64 {
 /// resides below it.
 /// # Parameters
 ///
-/// * `signal` - A reference to a vector of the signal samples.
+/// * `signal` -A reference to a slice of the signal samples.
 /// * `sample_rate` - The sample rate of the signal in Hz.
 /// * `rolloff_point` - An optional threshold to compute the rolloff, defaults to 0.99 if not provided.
 ///
@@ -114,7 +138,7 @@ pub fn get_spectral_rolloff(signal: &[f64], sample_rate: f64, rolloff_point: Opt
 ///
 /// # Parameters
 ///
-/// * `signal` - A reference to a vector of the signal samples.
+/// * `signal` -A reference to a slice of the signal samples.
 /// # Returns
 ///
 /// A floating point value representing the RMS of the signal.
@@ -133,7 +157,7 @@ pub fn get_rms(signal: &[f64]) -> f64 {
 ///
 /// # Parameters
 ///
-/// * `signal` - A slice of the signal samples.
+/// * `signal` - A reference to a slice of the signal samples.
 ///
 /// # Returns
 ///

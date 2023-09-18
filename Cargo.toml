@@ -13,6 +13,7 @@ description = "estratto is a powerful and user-friendly Rust library designed fo
 
 [dependencies]
 rustfft = "6.0.1"
+ndarray = "0.15"
 
 [dev-dependencies]
 approx = "0.5.1"
