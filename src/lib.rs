@@ -7,11 +7,13 @@ extern crate serde_derive;
 extern crate approx;
 
 // Internal modules
+mod core;
+mod filters;
 mod features;
 mod utils;
 
 /// A type alias for Hertz, representing frequency in cycles per second.
-pub type Hz = utils::Hz;
+pub type Hz = core::Hz;
 
 /// Amplitude Spectrum
 ///
