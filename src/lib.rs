@@ -9,6 +9,7 @@ extern crate approx;
 // Internal modules
 mod features;
 mod utils;
+mod core;
 
 /// A type alias for Hertz, representing frequency in cycles per second.
 pub type Hz = utils::Hz;
@@ -48,6 +49,24 @@ pub fn get_amplitude_spectrum(signal: &[f64]) -> Vec<f64> {
 ///
 pub fn get_power_spectrum(signal: &[f64]) -> Vec<f64> {
     features::spectral::power_spectrum::compute(signal)
+}
+
+/// Spectral Bandwidth
+///
+/// A measure indicating the width of the frequency band over which a majority
+/// of the spectral energy is concentrated. It gives an idea of the "texture"
+/// of the sound, differentiating between "sharp" and "dull" timbres. Essentially,
+/// it captures how the energy of a signal is spread across the frequency spectrum.
+///
+/// # Parameters
+///
+/// * `signal` - A reference to a vector of the signal samples.
+/// # Returns
+///
+/// A floating point value representing the spectral bandwidth.
+///
+pub fn get_spectral_bandwidth(signal: &[f64]) -> f64 {
+    features::spectral::spectral_bandwidth::compute(signal)
 }
 
 /// Spectral Centroid

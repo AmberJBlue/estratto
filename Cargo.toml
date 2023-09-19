@@ -12,6 +12,10 @@ description = "estratto is a powerful and user-friendly Rust library designed fo
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+assert_approx_eq = "1.1.0"
+ndarray = "0.15.6"
+ndarray-rand = "0.14.0"
+num-complex = "0.4.4"
 rustfft = "6.0.1"
 
 [dev-dependencies]
