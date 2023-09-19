@@ -19,6 +19,7 @@ estratto equips developers with a comprehensive suite of audio feature extractio
 - Power Spectrum
 - RMS (Root Mean Square)
 - Spectral Centroid
+- Spectral Contrast
 - Spectral Flatness
 - Spectral Rolloff
 - Zero Crossing Rate
