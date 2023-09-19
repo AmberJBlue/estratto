@@ -22,6 +22,11 @@ estratto equips developers with a comprehensive suite of audio feature extractio
 - Spectral Flatness
 - Spectral Rolloff
 - Zero Crossing Rate
+
+## Filters
+- Discrete cosine transform (DCT type-III)
+- Mel-frequency
+
 - **...and more** - This is still a work in progress stay tuned for more features!
 
 ## 🚀 Getting Started
